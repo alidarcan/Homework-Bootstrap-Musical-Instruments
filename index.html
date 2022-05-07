@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <title>Music Store</title>
+  <style>
+    img {
+      height: 250px;
+      width: 250px;
+      object-fit: contain;
+    }
+
+    .card-title {
+      height: 50px;
+    }
+  </style>
+</head>
+
+<body style="background-color:#E9ECEF;">
+
+  <!-- nav -->
+  <ul class="nav nav-pills bg-dark py-1" id="pills-tab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <a class="nav-link text-danger navbar-brand mr-0" href="index.html" role="tab">Music Store</a>
+    </li>
+    <li class="nav-item" role="presentation">
+      <a class="nav-link active text-light" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
+        aria-controls="pills-home" aria-selected="true">Home</a>
+    </li>
+    <li class="nav-item" role="presentation">
+      <a class="nav-link text-light" id="pills-products-tab" data-toggle="pill" href="#pills-products" role="tab"
+        aria-controls="pills-products" aria-selected="false">Products</a>
+    </li>
+    <li class="nav-item" role="presentation">
+      <a class="nav-link text-light" id="pills-about-tab" data-toggle="pill" href="#pills-contact" role="tab"
+        aria-controls="pills-contact" aria-selected="false">About Us</a>
+    </li>
+  </ul>
+
+  <div class="tab-content" id="pills-tabContent">
+    <!-- home -->
+    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+
+      <!-- jumbotron -->
+      <div class="jumbotron text-center py-0">
+        <h1 class="display-3 text-danger">Hello!</h1>
+        <p class="lead">Welcome to Music Store Website! You could find many instruments here. For fair prices and
+          quality products, visit <span><a class="text-danger font-weight-normal"
+              onclick="onClick(productsDOM)">Products</a></span> webpage.</p>
+        <hr class="my-4">
+        <h2 class="text-info mt-3">Musical Instruments in Our Website</h2>
+        <ul class="list-group mt-3">
+          <a onclick="onClick(productsDOM)" role="button"
+            class="list-group-item-action list-group-item col-3 mx-auto bg-warning">Guitar</a>
+          <a onclick="onClick(productsDOM)" role="button"
+            class="list-group-item-action list-group-item col-3 mx-auto bg-warning">Drums</a>
+          <a onclick="onClick(productsDOM)" role="button"
+            class="list-group-item-action list-group-item col-3 mx-auto bg-warning">Piano</a>
+          <a onclick="onClick(productsDOM)" role="button"
+            class="list-group-item-action list-group-item col-3 mx-auto bg-warning">Violin</a>
+        </ul>
+        <a class="btn btn-primary btn-lg mt-3" onclick="onClick(aboutUsDOM)" role="button">About Us</a>
+      </div>
+    </div>
+
+    <!-- products -->
+    <div class="tab-pane fade" id="pills-products" role="tabpanel" aria-labelledby="pills-products-tab">
+      <h2 class="display-4 text-danger text-center mb-3">Products</h2>
+      <div class="row row-cols-1 row-cols-md-3 mx-5">
+        <div class="col mb-4">
+          <div class="card h-100">
+            <img src="https://www.musik-produktiv.com/pic-010107419l/fender-custom-shop-masterbuilt-59-stratocaster.jpg"
+              class="card-img-top" alt="fender masterbuilt 59 stratocaster">
+            <div class="card-body">
+              <h5 class="card-title">Fender Masterbuilt 59 Stratocaster</h5>
+              <p class="card-text"><span class="badge badge-secondary">$6.311,40</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card h-100">
+            <img
+              src="https://www.do-re.com.tr/gibson-les-paul-reissue-custom-shop-1959-elektro-gitar-bourbonburst-184b5181d446449dd9ee9218cdb8dc12-7b01b970d89eb8b0af8b7df44afececb-max-pp.jpg"
+              class="card-img-top" alt="gibson 1959 les paul standard">
+            <div class="card-body">
+              <h5 class="card-title">Gibson 1959 Les Paul Standard</h5>
+              <p class="card-text"><span class="badge badge-secondary">$8.475,13</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card h-100">
+            <img src="https://m.media-amazon.com/images/I/71-Dmi7vNeL._AC_SX355_.jpg" class="card-img-top"
+              alt="dw drum workshop satin 5">
+            <div class="card-body">
+              <h5 class="card-title">Dw Drum Workshop Satin 5</h5>
+              <p class="card-text"><span class="badge badge-secondary">$1.949,00</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card h-100">
+            <img
+              src="https://sc1.musik-produktiv.com/pic-010112034xxl/tama-imperialstar-ie52kh6w-hlb-22-hairline-blue.jpg"
+              class="card-img-top" alt="tama imperialstar 22 hairline blue">
+            <div class="card-body">
+              <h5 class="card-title">Tama Imperialstar 22 Hairline Blue</h5>
+              <p class="card-text"><span class="badge badge-secondary">$739,13</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card h-100">
+            <img src="https://m.media-amazon.com/images/I/71-Dmi7vNeL._AC_SX355_.jpg" class="card-img-top"
+              alt="dw drum workshop satin 5">
+            <div class="card-body">
+              <h5 class="card-title">Dw Drum Workshop Satin 5</h5>
+              <p class="card-text"><span class="badge badge-secondary">$1.949,00</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card h-100">
+            <img src="https://productimages.hepsiburada.net/s/8/375/9040878764082.jpg" class="card-img-top"
+              alt="vivaldi vl 904 4/4">
+            <div class="card-body">
+              <h5 class="card-title">Vivaldi Vl 904 4/4</h5>
+              <p class="card-text"><span class="badge badge-secondary">$104,20</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card h-100">
+            <img src="https://media.mydukkan.com/image/33264/thmb_900x900_Kinglos.KinglosAdvancedViolinKLVP03A33264.jpg"
+              class="card-img-top" alt="kinglos advanced violin klvp 03a 4/4">
+            <div class="card-body">
+              <h5 class="card-title">Kinglos Advanced Violin Klvp 03a 4/4</h5>
+              <p class="card-text"><span class="badge badge-secondary">$436,79</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card h-100">
+            <img src="https://cdn.akakce.com/z/roland/roland-rp30-crl-gulagaci-dijital-duvar-su.jpg"
+              class="card-img-top" alt="roland rp30-crl">
+            <div class="card-body">
+              <h5 class="card-title">Roland RP30-CRL</h5>
+              <p class="card-text"><span class="badge badge-secondary">$773,54</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card h-100">
+            <img src="https://cdn.cimri.io/image/240x240/casio-cdp-135bk-dijital-piyano_112289787.jpg"
+              class="card-img-top" alt="Casio CDP-135BK">
+            <div class="card-body">
+              <h5 class="card-title">Casio CDP-135BK</h5>
+              <p class="card-text"><span class="badge badge-secondary">$247,42</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- about -->
+    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-about-tab">
+      <div class="mx-5">
+        <h2 class="display-4 text-danger text-center mb-3">About Us</h2>
+        <p>Music Store was founded in 2022 by Ali Rıza Darcan. Its purpose is to establish a bridge between fair
+          musical instruments with people.</p>
+        <h3 class="text-warning">Our Vision</h3>
+        <p>To provide people quality musical instruments. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Consequatur voluptatibus adipisci quaerat beatae animi optio perspiciatis voluptas dignissimos sint. Omnis
+          possimus asperiores amet quas inventore nobis quibusdam modi libero expedita?</p>
+        <h3 class="text-warning">Our Mission</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus incidunt at sit repudiandae quidem
+          culpa
+          distinctio totam! Temporibus quasi rerum quo dolores eum. Similique accusamus nihil magnam exercitationem
+          omnis distinctio?</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- jQuery and Bootstrap Bundle (includes Popper) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
+
+  <script>
+    const productsDOM = document.querySelector("#pills-products-tab")
+    const aboutUsDOM = document.querySelector("#pills-about-tab")
+    function onClick(event) {
+      event.click()
+    }
+  </script>
+</body>
+
+</html>
